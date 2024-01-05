@@ -1,7 +1,7 @@
 {
-  "name": "typescript-action",
-  "description": "GitHub Actions TypeScript template",
-  "version": "0.0.0",
+  "name": "conventional-commit-pull-request-checker",
+  "description": "Github action for checking that pull request title and body adheres to conventional commit format ",
+  "version": "0.1.0",
   "author": "",
   "private": true,
   "homepage": "https://github.com/actions/typescript-action",
@@ -69,6 +69,7 @@
     "@actions/core": "^1.10.1"
   },
   "devDependencies": {
+    "@actions/github": "^6.0.0",
     "@types/jest": "^29.5.11",
     "@types/node": "^20.10.6",
     "@typescript-eslint/eslint-plugin": "^6.16.0",

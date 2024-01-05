@@ -1,23 +1,43 @@
-name: 'The name of your action here'
-description: 'Provide a description here'
-author: 'Your name or organization here'
+name: 'Conventional commit pull request checker'
+description: 'Checks pull request title and body to adhere to conventional commits standard'
+author: 'oleksiireshetnik'
 
 # Add your action's branding here. This will appear on the GitHub Marketplace.
 branding:
-  icon: 'heart'
-  color: 'red'
+  icon: 'git-commit'
+  color: 'green'
 
 # Define your inputs here.
 inputs:
-  milliseconds:
-    description: 'Your input description here'
-    required: true
-    default: '1000'
+  title-check-enabled:
+    description: ''
+    required: false
+    default: 'true'
 
-# Define your outputs here.
-outputs:
-  time:
-    description: 'Your output description here'
+  title-max-len:
+    description: ''
+    required: false
+    default: '-1'
+
+  description-check-enabled:
+    description: ''
+    required: false
+    default: 'true'
+
+  description-required:
+    description: ''
+    required: false
+    default: 'false'
+
+  description-max-len:
+    description: ''
+    required: false
+    default: '-1'
+
+  ignored-contributors:
+    description: 'Determines users that are exempt from this action'
+    required: false
+    default: ''
 
 runs:
   using: node20
