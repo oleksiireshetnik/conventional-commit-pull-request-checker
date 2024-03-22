@@ -22,7 +22,7 @@ inputs:
   description-check-enabled:
     description: ''
     required: false
-    default: 'true'
+    default: 'false'
 
   description-required:
     description: ''
